@@ -84,3 +84,56 @@ ZTNA est une solution basée sur le cloud et sans matériel, ce qui facilite l'�
 
 - **Atténuation de la violation des données:**
 	Le trafic Internet est en toute sécurité  via le tunnel ZTNA, éliminant les risques des violations de données et un accès non autorisé.
+
+## Les solutions ZTNA possible
+
+### Sophos
+#### à propos de sophos
+**Sophos** est une entreprise **spécialisée dans les solutions de cybersécurité**. Elle propose une large gamme de produits et services pour protéger les entreprises contre les menaces en ligne. Sophos se distingue par son approche innovante, axée sur l'intelligence artificielle, l'apprentissage automatique et le partage d'informations sur les menaces en temps réel. Sophos propose pour la plupart du temps des solutions **payantes**.
+
+**ZTNA** fait partie de ses produits.
+
+#### ZTNA de sophos
+
+Le **Sophos ZTNA** est, en tant que ZTNA, une solution de contrôle d'accès réseau basée sur le principe du "**Zero Trust**". 
+Le **Sophos ZTNA** présente de nombreux fonctionnalités principaux dont:
+
+- **Connecter les travailleurs distants**:
+	Sophos ZTNA permet à vos travailleurs distants d’accéder en toute sécurité et en toute transparence aux applications et aux données dont ils ont besoin, tout en simplifiant le déploiement, l’enrôlement et la gestion par rapport au VPN traditionnel.
+
+- **Micro-segmentation des applications**:
+	Sophos ZTNA fournit une micro-segmentation de pointe pour offrir un accès sécurisé aux applications, qu’elles soient hébergées sur site, dans un datacenter ou dans votre infrastructure de Cloud public. Vous bénéficiez également d’une visibilité en temps réel sur l’activité des applications en ce qui concerne leur statut, leur posture de sécurité et leur utilisation. Vous pouvez également contrôler l’accès à de nombreuses **applications SaaS** avec Sophos ZTNA en utilisant des restrictions d’adresse IP pour autoriser uniquement les connexions à partir de vos passerelles ZTNA.
+
+- **Fourni dans le Cloud, Géré dans le Cloud**:
+	**Sophos ZTNA** est fourni et géré dans le Cloud et intégré à **Sophos Central** qui est la plateforme de reporting et de gestion de la Cyber sécurité la plus fiable sur le marché
+
+- **Protection Endpoint Next-Gen**
+	- Sécurisations des accès aux applications, des postes, et des réseaux contre  les menaces.
+	- Sophos ZTNA et Intercept X étant intégrés, partagent en permanences des informations sur l'état de sécurité du système afin d'isoler automatiquement ceux qui sont compromis.
+	- Un agent unique, une console unique, un éditeur unique
+
+- **Évolutivité des passerelles applicatives**
+	Les passerelles Sophos ZTNA sont gratuites et faciles à déployer là où vous en avez besoin. Disponibles sous forme d’appliance virtuelle, vous pouvez aisément déployer des passerelles à haute disponibilité et les dimensionner selon les besoins de votre entreprise.
+
+- **Intégration de l’identité**
+	Avec le Zero Trust, l’identité est essentielle. Sophos ZTNA vérifie en permanence l’identité des utilisateurs grâce à la prise en charge des solutions **IDP (Identity Provider)** les plus populaires, notamment **Microsoft Azure** et **Okta**.
+
+
+![[Sophos_ZTNA.png]]
+
+**Spécification Technique**
+
+
+| **Plateformes Prises en charge**           |                                                                                                                                                   |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Fournisseurs d’identité                    | Microsoft Azure et Okta                                                                                                                           |
+| Plateformes de passerelle Sophos ZTNA      | VMware ESXi 6.5+, Hyper-V 2016+ et AWS ; Prochainement : Sophos Firewall v20 (toutes les plateformes matérielles, virtuelles ou Cloud)            |
+| Plateformes du client Sophos ZTNA          | Windows 10 1803 ou supérieur, macOS 11 (Big Sur) ou supérieur ; Toutes les plateformes prennent en charge l’accès sans agent aux applications web |
+| État de sécurité de l’appareil Sophos ZTNA | Sophos Security Heartbeat (Intercept X)                                                                                                           |
+
+
+| **Spécifications des passerelles**    |                                                                                                                 |
+| ------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| VM recommandée                        | 2 cœurs / 4 Go                                                                                                  |
+| Clustering multinœuds                 | Jusqu’à 9 nœuds avec équilibrage de la charge pour les performances, la capacité et la continuité des activités |
+| Capacité et dimensionnement des nœuds | 10 000 connexions d’agents pour un seul nœud, jusqu’à 90 000 connexions d’agents dans un cluster (9 nœuds max.) |
