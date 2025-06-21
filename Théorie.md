@@ -137,3 +137,24 @@ Le **Sophos ZTNA** présente de nombreux fonctionnalités principaux dont:
 | VM recommandée                        | 2 cœurs / 4 Go                                                                                                  |
 | Clustering multinœuds                 | Jusqu’à 9 nœuds avec équilibrage de la charge pour les performances, la capacité et la continuité des activités |
 | Capacité et dimensionnement des nœuds | 10 000 connexions d’agents pour un seul nœud, jusqu’à 90 000 connexions d’agents dans un cluster (9 nœuds max.) |
+
+### pfSense
+
+#### à propos de pfSense
+pfSense est une distribution logicielle libre et open source basée sur FreeBSD, conçue spécifiquement pour servir de **pare-feu (firewall)**, de **routeur**, de **VPN** notamment avec **OpenVPN**, entièrement administrable via une interface web intuitive. Développé initialement en 2004 à partir du projet m0n0wall, pfSense a évolué pour offrir une solution robuste, flexible et extensible, adaptée aussi bien aux petites entreprises, aux particuliers qu’aux grandes organisations.
+
+pfSense est une solution de sécurité réseau complète, flexible et éprouvée, adaptée à tous types d’environnements, du particulier à l’entreprise. Son architecture modulaire, sa gestion centralisée via une interface web et la richesse de ses fonctionnalités en font un choix de référence pour la protection et la gestion des réseaux modernes
+
+
+#### ZTNA avec pfSense
+
+Grâce à ses nombreuses fonctionnalités et en ajoutant quelques outils supplémentaires, pfSense peut parfaitement être utilisé pour déployer un ZTNA dans un réseau. 
+
+**Les fonctionnalités de pfSense pour un ZTNA**
+	- **pare-feu**: Analyse et filtre le trafic réseau en temps réel, protège contre les intrusions et les attaques
+	- **Routage**: Prend en charge le routage statique et dynamique, la gestion **multi-WAN**, le **load balancing** et le **failover** pour assurer la continuité de service
+	- **VPN**: Support natif d’OpenVPN, IPsec, L2TP/IPsec, permettant la création de tunnels sécurisés pour le télétravail ou l’interconnexion de sites distants
+	- **DHCP/DNS**: Serveur DHCP et relais, DNS Forwarder/Resolver, gestion de Dynamic DNS
+	- **Gestion des VLAN et réseaux multiples**: Support complet du 802.1q, gestion de plusieurs interfaces et réseaux isolés.
+	- **Client Idp (Identy Provider)**: pfSense peut agir comme un client du **EMS (Endpoint Management Server)**, envoyant les requêtes d'authentification des utilisateurs au **EMS**. C'est donc pfSense qui délègue les authentifications.  
+
