@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  freeradius:
+    image: freeradius:latest
+    container_name: freeradius-server
+    networks:
+      vlan_users:
+        ipv4_address: 172.20.0.254
+    ports:
+      - "1812:1812/udp"
+    volumes:
+      - ./freeradius/users:/etc/freeradius/3.0/mods-config/files/authorize
+      - ./freeradius/clients.conf:/etc/freeradius/3.0/clients.conf
+      - ./freeradius/log:/var/log/freeradius
+  
+  client1:
+    image: clt_site_pal:latest 
+    container_name: client1
+    networks:
+      vlan_users:
+        ipv4_address: 172.20.0.11
+        
+  client2:
+    image: clt_site_pal:latest
+    container_name: client2
+    networks:
+      vlan_users:
+        ipv4_address: 172.20.0.12
+  client3:
+    image: clt_site_pal:latest
+    container_name: client3
+    networks:
+      vlan_users:
+        ipv4_address: 172.20.0.13
+
+networks:
+  vlan_users:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
